@@ -1,0 +1,109 @@
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+body {
+    background-image: url("images/bghome.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#h1 {
+    color: lightgrey;
+    margin-left: 10%;
+}
+
+.caret {
+    margin-left: 5px;
+}
+
+.inverse-dropdown {
+    background-color: #3a3a3a;
+    border-color: #080808;
+}
+
+.inverse-dropdown > li > a {
+    color: #9d9d9d;
+}
+
+.inverse-dropdown > .divider {
+    background-color: #000;
+}
+
+.padtop5 {
+    padding-top: 5px;
+}
+
+.padtop10 {
+    padding-top: 10px;
+}
+
+.padtop15 {
+    padding-top: 15px;
+}
+
+.panel {
+    background-color: whitesmoke;
+    color: black;
+    margin-top: 80px;
+}
+
+.panel-default > .panel-heading {
+    text-align: center;
+    color: #FFFFFF;
+    background: #3a3a3a;
+    border-color: #ddd;
+    font-family: Verdana, Arial, sans-serif;
+    padding: 0px;
+}
+
+table {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
+
+.homecar {
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.martop7 {
+    margin-top: 7%;
+}
+
+.jumcust {
+    box-shadow: 2px 2px 2px darkgrey;
+    border: 1px solid darkgrey;
+    border-radius: 0px;
+    text-align: center;
+}
+
+.jumcust2 {
+    box-shadow: 1px 1px 1px 1px darkgrey;
+    border-radius: 0px;
+}
+
+a:link {
+    text-decoration: none;
+    color: #333;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.delbut > a {
+    color: white;
+}
