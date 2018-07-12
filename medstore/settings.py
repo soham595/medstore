@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'pharma.apps.PharmaConfig'
 ]
 
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
