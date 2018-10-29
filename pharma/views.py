@@ -19,7 +19,6 @@ def dealerform(request):
 def dealerforminsert(request):
     try:
         dealer = Dealer()
-        dealer.d_id = request.POST['did']
         dealer.dname = request.POST['dname']
         dealer.address = request.POST['address']
         dealer.phn_no = request.POST['pno']
@@ -33,7 +32,6 @@ def dealerforminsert(request):
 def dealerformupdate(request, foo):
     try:
         dealer = Dealer.objects.get(pk=foo)
-        dealer.d_id = request.POST['did']
         dealer.dname = request.POST['dname']
         dealer.address = request.POST['address']
         dealer.phn_no = request.POST['pno']
@@ -125,7 +123,6 @@ def custform(request):
 def custforminsert(request):
     try:
         cust = Customer()
-        cust.c_id = request.POST['cid']
         cust.fname = request.POST['fname']
         cust.lname = request.POST['lname']
         cust.address = request.POST['address']
@@ -140,7 +137,6 @@ def custforminsert(request):
 def custformupdate(request, foo):
     try:
         cust = Customer.objects.get(pk=foo)
-        cust.c_id = request.POST['cid']
         cust.fname = request.POST['fname']
         cust.lname = request.POST['lname']
         cust.address = request.POST['address']
@@ -231,7 +227,6 @@ def purchaseform(request):
 def purchaseforminsert(request):
     try:
         purchase = Purchase()
-        purchase.p_id = request.POST['pid']
         purchase.pname = request.POST['pname']
         purchase.fname = request.POST['fname']
         purchase.lname = request.POST['lname']
@@ -249,7 +244,6 @@ def purchaseforminsert(request):
 def purchaseformupdate(request, foo):
     try:
         purchase = Purchase.objects.get(pk=foo)
-        purchase.p_id = request.POST['pid']
         purchase.pname = request.POST['pname']
         purchase.fname = request.POST['fname']
         purchase.lname = request.POST['lname']

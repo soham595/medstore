@@ -6,11 +6,14 @@ body {
     background-image: url("images/bghome.jpg");
     background-size: cover;
     background-attachment: fixed;
+    min-height: 100vh;
 }
 
 #h1 {
+    font-weight: lighter!important;
     color: lightgrey;
-    margin-left: 10%;
+    margin-left: 5%;
+    text-shadow: 5px 5px 5px black;
 }
 
 .caret {
@@ -59,6 +62,8 @@ body {
 
 table {
     text-align: center;
+    border-collapse: collapse;
+    background-color: darkgray;
 }
 
 th {
@@ -75,14 +80,23 @@ th {
 }
 
 .jumcust {
-    box-shadow: 2px 2px 2px darkgrey;
+    box-shadow: 3px 5px 5px rgba(47, 47, 47, 0.8);
     border: 1px solid darkgrey;
     border-radius: 0px;
     text-align: center;
+    background-color: rgba(238, 238, 238, 0.95);
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th {
+    border-top: none;
+}
+
+.table>tbody>tr:hover {
+    background-color: rgba(238, 238, 238, 0.95);
 }
 
 .jumcust2 {
-    box-shadow: 1px 1px 1px 1px darkgrey;
+    box-shadow: 3px 5px 5px rgba(47, 47, 47, 0.8);
     border-radius: 0px;
 }
 
@@ -106,4 +120,47 @@ a:active {
 
 .delbut > a {
     color: white;
+}
+
+#contact {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-top: 1px solid;
+    background-color: rgba(34, 34, 34, 0.9);
+    color: lightgray;
+    font-size: 1.5rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.linkto {
+    cursor: pointer;
+}
+
+.modaltext {
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+}
+
+#modalContactForm {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-title {
+    font-size: 3rem;
+}
+
+.navbar {
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+.idlink:hover {
+    cursor: pointer;
+    background-color: rgba(101, 101, 101, 0.69);
+}
+
+#myCarousel {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.66);
 }
