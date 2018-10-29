@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="{% static 'pharma/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'pharma/css/bootstrap-theme.min.css' %}">
     <link rel="stylesheet" href="{% static 'pharma/css/style.css' %}">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"
+            integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
+            crossorigin="anonymous"></script>
     <script type="text/javascript" src="{% static 'pharma/js/jquery.js' %}"></script>
     <script type="text/javascript" src="{% static 'pharma/js/npm.js' %}"></script>
     <script type="text/javascript" src="{% static 'pharma/js/bootstrap.min.js' %}"></script>
@@ -68,7 +71,44 @@
         </div>
     </div>
 </nav>
-
+<div class="modal fade" id="modalContactForm" tabindex="-1">
+    <form action="https://formspree.io/soham5959595@gmail.com" method="post">
+        {% csrf_token %}
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <div class="md-form">
+                        <i class="fa fa-user prefix grey-text"></i><label class="modaltext" for="form34"> Your name</label>
+                        <input type="text" id="form34" name="cu-name" class="form-control validate">
+                    </div>
+                    <div class="md-form">
+                        <i class="fa fa-envelope prefix grey-text"></i><label class="modaltext" for="form29"> Your email</label>
+                        <input type="email" id="form29" name="cu-mail" class="form-control validate">
+                    </div>
+                    <div class="md-form">
+                        <i class="fa fa-tag prefix grey-text"></i><label class="modaltext" for="form32"> Subject</label>
+                        <input type="text" id="form32" name="cu-subject" class="form-control validate">
+                    </div>
+                    <div class="md-form">
+                        <i class="fas fa-pencil-alt prefix grey-text"></i><label class="modaltext" for="form8"> Your message</label>
+                        <textarea type="text" id="form8" name="cu-message" class="md-textarea form-control"
+                                  rows="4"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="submit" class="btn btn-brown">Send <i class="fas fa-paper-plane ml-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
 <div class="container">
     <div class="col-md-2"></div>
     <div class="panel panel-default col-md-8 jumcust2">
@@ -232,7 +272,21 @@
     </div>
 
 </div>
-
+<footer id="contact" class="container-fluid text-center">
+    <div class="row">
+        <div class="left-footer col-lg-6">
+            <span class="footer-text">Have any queries? Contact us via email or call us on +91 8073276763.</span>
+        </div>
+        <div class="col-lg-4"></div>
+        <div class="right-footer col-lg-2">
+                <span class="linkto" onclick=" window.open('https://github.com/soham595/medstore', '_blank'); return false;"><i
+                        class="fab fa-github-square prefix mr-1"></i> GitHub</span>
+            <span>-</span>
+            <span class="linkto" data-toggle="modal" data-target="#modalContactForm"><i
+                    class="fa fa-envelope prefix mr-1"></i> Contact Us</span>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
 

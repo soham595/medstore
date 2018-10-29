@@ -3,7 +3,6 @@ from django.db import models
 
 # Create your models here.
 class Dealer(models.Model):
-    d_id = models.IntegerField(unique=True)
     dname = models.CharField(max_length=30)
     address = models.CharField(max_length=100)
     phn_no = models.BigIntegerField(unique=True)
@@ -27,7 +26,6 @@ class Employee(models.Model):
 
 
 class Customer(models.Model):
-    c_id = models.IntegerField(unique=True)
     fname = models.CharField(max_length=30)
     lname = models.CharField(max_length=30)
     address = models.CharField(max_length=100)
@@ -51,7 +49,6 @@ class Medicine(models.Model):
 
 
 class Purchase(models.Model):
-    p_id = models.IntegerField(unique=True)
     pname = models.CharField(max_length=30)
     fname = models.CharField(max_length=30)
     lname = models.CharField(max_length=30)
