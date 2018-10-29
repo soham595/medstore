@@ -71,7 +71,8 @@
         </div>
     </div>
 </nav>
-<form action="https://formspree.io/soham5959595@gmail.com" method="post">
+<div class="modal fade" id="modalContactForm" tabindex="-1">
+    <form action="https://formspree.io/soham5959595@gmail.com" method="post">
         {% csrf_token %}
         <div class="modal-dialog">
             <div class="modal-content">
@@ -107,6 +108,7 @@
             </div>
         </div>
     </form>
+</div>
 <div class="container">
     <div class="col-md-2"></div>
     <div class="panel panel-default col-md-8 jumcust2">
